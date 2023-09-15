@@ -1,5 +1,4 @@
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Guthabenentwicklung {
@@ -33,12 +32,12 @@ public class Guthabenentwicklung {
 
 
         double rendite = eingabeGuthaben - initial;
-        System.out.println("\n Du hast in " + eingabelaufzeit + " Jahren folgende Rendite erzielt: " + rundenAufFuenfRappen(rendite));
+        System.out.println("\n Du hast in " + eingabelaufzeit + " Jahren folgende Rendite erzielt: " + runden(rendite));
         dasIstEinScanner.close();
 
     }
 
-    public static double rundenAufFuenfRappen(double rendite) {
+    public static double runden(double rendite) {
 
         //double dasIstEinTest = 12345.8998956654;
 
@@ -73,8 +72,17 @@ public class Guthabenentwicklung {
 
         //double roundedTotal =
 
+
+        System.out.println("Das ist ein Test für den zweiten Commit");
+
         return ersteStelleVorDemKomma + ersteStelleNachKomma/10 + zweiteStelleNachKomma/100;
 
+
+
+
+        // public static double rundenAufFuenfRappen(double runden) {
+        //     switch ()
+        // }
 
 
 
